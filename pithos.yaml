@@ -79,7 +79,7 @@ keystore:
 # The default provider relies on cassandra.
 bucketstore:
   default-region: 'CH-GV1'
-  cluster: 'localhost'
+  cluster: 'cassandra'
   keyspace: 'storage'
 
 
@@ -98,11 +98,11 @@ bucketstore:
 regions:
   CH-GV1:
     metastore:
-      cluster: 'localhost'
+      cluster: 'cassandra'
       keyspace: 'storage'
     storage-classes:
       standard:
-        cluster: 'localhost'
+        cluster: 'cassandra'
         keyspace: 'storage'
         max-chunk: '128k'
         max-block-chunks: 1024
