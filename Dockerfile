@@ -7,4 +7,4 @@ ADD pithos.yaml pithos.yaml
 
 EXPOSE 8080
 
-CMD ["java","-jar", "pithos-0.7.4-standalone.jar", "-f", "pithos.yaml"]
+ENTRYPOINT ["java","-jar", "pithos-0.7.4-standalone.jar", "-f", "pithos.yaml"]
